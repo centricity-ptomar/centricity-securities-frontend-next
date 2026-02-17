@@ -76,6 +76,7 @@ const IMPORTANT_LINKS = [
     { label: 'Investor Charter for DP', href: '/investor-charter' },
     { label: 'Account Opening Procedure', href: '/regulatory' },
     { label: 'Filing a complaint', href: '/investor-complaints' },
+    { label: 'Sitemap', href: '/sitemap' },
 ]
 
 export default function Footer() {
