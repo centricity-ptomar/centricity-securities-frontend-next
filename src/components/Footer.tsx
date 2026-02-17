@@ -1,4 +1,5 @@
 "use client";
+import React from 'react';
 import Link from 'next/link';
 
 const SOCIAL_LINKS = [
@@ -233,14 +234,17 @@ export default function Footer() {
 
                     {/* Important Information Marquee */}
                     <div className="border-t border-white/5 mt-6 py-3 bg-white/5 w-full overflow-hidden relative group">
-                        {/* @ts-ignore */}
-                        <marquee behavior="scroll" direction="left" scrollamount="10"
-                            onMouseOver="this.stop()" onMouseOut="this.start()"
-                            className="text-gray-300 text-[12px] font-medium block"
-                        >
-                            <span className="text-brand-primary font-bold uppercase text-[11px] mr-2">Important Information:</span>
-                            KYC is a one-time exercise while dealing in securities markets — once KYC is completed through a SEBI registered intermediary (Broker, DP, Mutual Fund, etc.), you need not undergo the same process again when approaching another intermediary. Prevent unauthorized transactions in your demat account — update your mobile number with your Depository Participant.
-                        </marquee>
+                        {React.createElement('marquee', {
+                            behavior: "scroll",
+                            direction: "left",
+                            scrollamount: "10",
+                            onMouseOver: (e: any) => e.currentTarget.stop(),
+                            onMouseOut: (e: any) => e.currentTarget.start(),
+                            className: "text-gray-300 text-[12px] font-medium block"
+                        }, [
+                            <span key="1" className="text-brand-primary font-bold uppercase text-[11px] mr-2">Important Information:</span>,
+                            "KYC is a one-time exercise while dealing in securities markets — once KYC is completed through a SEBI registered intermediary (Broker, DP, Mutual Fund, etc.), you need not undergo the same process again when approaching another intermediary. Prevent unauthorized transactions in your demat account — update your mobile number with your Depository Participant."
+                        ])}
                     </div>
 
                     <div className="flex flex-col md:flex-row justify-between items-center pt-6 border-t border-white/5">
