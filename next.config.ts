@@ -1,14 +1,16 @@
 import type { NextConfig } from "next";
 
-const nextConfig = {
+const isProd = process.env.NODE_ENV === 'production';
+const repoName = 'centricity-securities-frontend-next';
+
+const nextConfig: NextConfig = {
   output: 'export',
-  // If deploying to a subpath, set basePath and assetPrefix:
-  basePath: '/centricity-securities-frontend-next', // Replace with your repo name (must start with a slash)
-  assetPrefix: '/centricity-securities-frontend-next/', // Replace with your repo name (must end with a slash)
-  // Optional: Configure images if needed for static export
+  // Only apply basePath in production (GitHub Pages)
+  basePath: isProd ? `/${repoName}` : undefined,
+  assetPrefix: isProd ? `/${repoName}/` : undefined,
   images: {
-    unoptimized: true, // Disable Next.js image optimization as it requires a server
+    unoptimized: true,
   },
 };
 
-module.exports = nextConfig;
+export default nextConfig;
