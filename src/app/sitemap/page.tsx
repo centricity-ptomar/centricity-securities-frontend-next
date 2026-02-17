@@ -27,6 +27,7 @@ const sitemapLinks = [
             { label: 'Investor Complaints', href: '/investor-complaints' },
             { label: 'Grievance Redressal', href: '/grievance-redressal' },
             { label: 'Regulatory', href: '/regulatory' },
+            { label: "Do's and Don'ts", href: '/dos-and-donts' },
         ]
     },
     {

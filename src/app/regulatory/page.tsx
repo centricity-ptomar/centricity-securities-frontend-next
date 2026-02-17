@@ -111,9 +111,13 @@ export default function RegulatoryPage() {
                         <section className="space-y-4">
                             <h2 className="text-xl font-bold text-brand-primary">Do's and Don'ts</h2>
                             <div className="p-6 bg-white/5 rounded-xl border border-white/10">
-                                <p className="text-sm text-gray-300">
-                                    Please refer to the comprehensive list of Do's and Don'ts for Investors as per circular no <span className="font-medium text-white">SEBI/HO/MIRSD/MIRSD-PoD1/P/CIR/2025/22</span> available in our downloads section or Investor Charter.
+                                <p className="text-sm text-gray-300 mb-4">
+                                    Please refer to the comprehensive list of Do's and Don'ts for Investors as per circular no <span className="font-medium text-white">SEBI/HO/MIRSD/MIRSD-PoD1/P/CIR/2025/22</span>.
                                 </p>
+                                <Link href="/dos-and-donts" className="inline-flex items-center gap-2 text-brand-primary hover:text-white transition-colors font-medium">
+                                    View Investor Do's and Don'ts
+                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                                </Link>
                             </div>
                         </section>
 

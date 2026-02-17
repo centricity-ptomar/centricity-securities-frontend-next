@@ -18,10 +18,16 @@ export default function ContactSection() {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        // Handle form submission logic here
-        console.log("Form Submitted", formData);
-        alert("Message Sent! We will contact you shortly.");
-        setFormData({ name: '', email: '', phone: '', message: '' });
+
+        const subject = `Contact Inquiry from ${formData.name}`;
+        const body = `Name: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0APhone: ${formData.phone}%0D%0A%0D%0AMessage:%0D%0A${formData.message}`;
+
+        window.location.href = `mailto:support@centricity.co.in?subject=${encodeURIComponent(subject)}&body=${body}`;
+
+        // Optional: Reset form or show success message after a brief delay
+        setTimeout(() => {
+            setFormData({ name: '', email: '', phone: '', message: '' });
+        }, 1000);
     };
 
     return (

@@ -43,9 +43,6 @@ const ONE_INVEST_LINKS = [
 const PRODUCTS_LINKS = [
     { label: 'Stocks', href: '/' },
     { label: 'Futures & Options', href: '/' },
-    { label: 'Mutual Funds', href: '/' },
-    { label: 'US Stocks', href: '/' },
-    { label: 'IPO', href: '/' },
 ];
 
 const QUICK_LINKS = [
@@ -235,13 +232,15 @@ export default function Footer() {
                     </div>
 
                     {/* Important Information Marquee */}
-                    <div className="border-t border-white/5 mt-6 py-3 bg-white/5 -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 overflow-hidden relative group">
-                        <div className="animate-marquee whitespace-nowrap inline-block">
+                    <div className="border-t border-white/5 mt-6 py-3 bg-white/5 w-full overflow-hidden relative group">
+                        {/* @ts-ignore */}
+                        <marquee behavior="scroll" direction="left" scrollamount="10"
+                            onMouseOver="this.stop()" onMouseOut="this.start()"
+                            className="text-gray-300 text-[12px] font-medium block"
+                        >
                             <span className="text-brand-primary font-bold uppercase text-[11px] mr-2">Important Information:</span>
-                            <span className="text-gray-300 text-[12px] font-medium">
-                                KYC is a one-time exercise while dealing in securities markets — once KYC is completed through a SEBI registered intermediary (Broker, DP, Mutual Fund, etc.), you need not undergo the same process again when approaching another intermediary. Prevent unauthorized transactions in your demat account — update your mobile number with your Depository Participant.
-                            </span>
-                        </div>
+                            KYC is a one-time exercise while dealing in securities markets — once KYC is completed through a SEBI registered intermediary (Broker, DP, Mutual Fund, etc.), you need not undergo the same process again when approaching another intermediary. Prevent unauthorized transactions in your demat account — update your mobile number with your Depository Participant.
+                        </marquee>
                     </div>
 
                     <div className="flex flex-col md:flex-row justify-between items-center pt-6 border-t border-white/5">
