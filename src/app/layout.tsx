@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import BackToTop from "@/components/BackToTop";
+import RiskDisclosureModal from "@/components/RiskDisclosureModal";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -38,6 +39,7 @@ export default function RootLayout({
       <body className="font-sans antialiased bg-black text-white">
         <Header />
         {children}
+        <RiskDisclosureModal />
         <Footer />
         <CookieBanner />
         <WhatsAppButton />

@@ -63,9 +63,13 @@ const QUICK_LINKS = [
 
 const IMPORTANT_LINKS = [
     { label: 'SEBI', href: 'https://www.sebi.gov.in/' },
+    { label: 'RBI', href: 'https://www.rbi.org.in/' },
+    { label: 'TRAI', href: 'https://trai.gov.in/' },
     { label: 'BSE', href: 'https://www.bseindia.com/' },
     { label: 'NSE', href: 'https://www.nseindia.com/' },
     { label: 'CDSL', href: 'https://www.cdslindia.com/' },
+    { label: 'NSDL e-Voting', href: 'https://evoting.nsdl.com/' },
+    { label: 'CDSL e-Voting', href: 'https://www.evotingindia.com/' },
     { label: 'SCORES', href: 'https://scores.sebi.gov.in' },
     { label: 'ODR Portal', href: 'https://smartodr.in/' },
     { label: 'Investor Charter for Stock Brokers', href: '/investor-charter' },
@@ -214,7 +218,7 @@ export default function Footer() {
                         </p>
                     </div>
 
-                    {/* Important Links & KYC Note */}
+                    {/* Important Links */}
                     <div className="border-t border-white/5 pt-6 space-y-4">
                         <div>
                             <h4 className="text-brand-primary font-bold mb-2 uppercase tracking-wide text-[10px]">Important Links</h4>
@@ -227,12 +231,15 @@ export default function Footer() {
                                 ))}
                             </div>
                         </div>
+                    </div>
 
-                        <div>
-                            <h4 className="text-brand-primary font-bold mb-2 uppercase tracking-wide text-[10px]">Important Information</h4>
-                            <p>
+                    {/* Important Information Marquee */}
+                    <div className="border-t border-white/5 mt-6 py-3 bg-white/5 -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 overflow-hidden relative group">
+                        <div className="animate-marquee whitespace-nowrap inline-block">
+                            <span className="text-brand-primary font-bold uppercase text-[11px] mr-2">Important Information:</span>
+                            <span className="text-gray-300 text-[12px] font-medium">
                                 KYC is a one-time exercise while dealing in securities markets — once KYC is completed through a SEBI registered intermediary (Broker, DP, Mutual Fund, etc.), you need not undergo the same process again when approaching another intermediary. Prevent unauthorized transactions in your demat account — update your mobile number with your Depository Participant.
-                            </p>
+                            </span>
                         </div>
                     </div>
 
