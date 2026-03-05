@@ -54,7 +54,7 @@ export default function ContactSection() {
                             <div>
                                 <h3 className="text-xl font-bold font-heading text-white mb-2">Visit Us</h3>
                                 <p className="text-gray-400 leading-relaxed">
-                                    Unit No 207 A & 207B, Tower-B,<br />
+                                    207A, 207B, Tower-B,<br />
                                     Global Business Park, Gurugram,<br />
                                     Haryana-122002
                                 </p>

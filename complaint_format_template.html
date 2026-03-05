@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investor Complaints Data</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+            color: #333;
+            background-color: #fff;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+        .brand {
+            color: #eab308; /* Brand Primary (Yellow) */
+        }
+        .title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1e293b;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .subtitle {
+            font-size: 14px;
+            color: #64748b;
+            margin-top: 5px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #0f172a;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-left: 4px solid #eab308;
+            padding-left: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            font-size: 11px;
+        }
+        th, td {
+            border: 1px solid #cbd5e1;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f8fafc;
+            font-weight: 600;
+            color: #334155;
+            vertical-align: top;
+        }
+        .table-striped tbody tr:nth-of-type(odd) {
+            background-color: #f8fafc;
+        }
+        .footer-note {
+            font-size: 10px;
+            color: #64748b;
+            line-height: 1.5;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">One<span class="brand">Invest</span></div>
+        <div class="title">Investor Complaints Data</div>
+        <div class="subtitle">Format for Investor Complaints Data to be displayed by Stock Brokers on their respective websites.</div>
+    </div>
+
+    <h3>Data for every month ending</h3>
+    <table class="table-striped">
+        <thead>
+            <tr>
+                <th width="3%">SN</th>
+                <th width="15%">Received from</th>
+                <th width="10%">Carried forward from previous month</th>
+                <th width="10%">Received during the month</th>
+                <th width="10%">Total Pending</th>
+                <th width="10%">Resolved*</th>
+                <th width="30%">Pending at the end of the month**</th>
+                <th width="12%">Average Resolution time^ (in days)</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>
+                    <table style="margin:0; border:none; width:100%;">
+                        <tr>
+                            <td style="border:none; border-right:1px solid #cbd5e1; padding:0 5px; width:50%;">Pending for less than 3 months</td>
+                            <td style="border:none; padding:0 5px; width:50%;">Pending for more than 3 months</td>
+                        </tr>
+                    </table>
+                </th>
+                <th></th>
+            </tr>
+            <tr style="background-color: #e2e8f0; text-align: center;">
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Directly from Investors</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <table style="margin:0; border:none; width:100%;">
+                        <tr>
+                            <td style="border:none; border-right:1px solid #cbd5e1; padding:0 5px; width:50%;"></td>
+                            <td style="border:none; padding:0 5px; width:50%;"></td>
+                        </tr>
+                    </table>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>SEBI (SCORES 2.0)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <table style="margin:0; border:none; width:100%;">
+                        <tr>
+                            <td style="border:none; border-right:1px solid #cbd5e1; padding:0 5px; width:50%;"></td>
+                            <td style="border:none; padding:0 5px; width:50%;"></td>
+                        </tr>
+                    </table>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Stock Exchanges</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <table style="margin:0; border:none; width:100%;">
+                        <tr>
+                            <td style="border:none; border-right:1px solid #cbd5e1; padding:0 5px; width:50%;"></td>
+                            <td style="border:none; padding:0 5px; width:50%;"></td>
+                        </tr>
+                    </table>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Other Sources (if any)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <table style="margin:0; border:none; width:100%;">
+                        <tr>
+                            <td style="border:none; border-right:1px solid #cbd5e1; padding:0 5px; width:50%;"></td>
+                            <td style="border:none; padding:0 5px; width:50%;"></td>
+                        </tr>
+                    </table>
+                </td>
+                <td></td>
+            </tr>
+            <tr style="font-weight: bold; background-color: #f1f5f9;">
+                <td>5</td>
+                <td>Grand Total</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <table style="margin:0; border:none; width:100%;">
+                        <tr>
+                            <td style="border:none; border-right:1px solid #cbd5e1; padding:0 5px; width:50%;"></td>
+                            <td style="border:none; padding:0 5px; width:50%;"></td>
+                        </tr>
+                    </table>
+                </td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="footer-note">
+        *Should include complaints of previous months resolved in the current month, if any.<br>
+        **Should include total complaints pending as on the last day of the month, if any.<br>
+        ^Average resolution time is the sum total of time taken to resolve each complaint in the current month divided by total number of complaints resolved in the current month.
+    </div>
+
+    <h3>Trend of monthly disposal of complaints</h3>
+    <table class="table-striped">
+        <thead>
+            <tr>
+                <th width="5%">SN</th>
+                <th width="25%">Month</th>
+                <th width="20%">Carried forward from previous month</th>
+                <th width="15%">Received</th>
+                <th width="15%">Resolved*</th>
+                <th width="20%">Pending**</th>
+            </tr>
+            <tr style="background-color: #e2e8f0; text-align: center;">
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>April - YYYY</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>May - YYYY</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>June - YYYY</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>July - YYYY</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>March - YYYY</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="font-weight: bold; background-color: #f1f5f9;">
+                <td></td>
+                <td>Grand Total</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="footer-note">
+        *Should include complaints of previous months resolved in the current month, if any.<br>
+        **Should include total complaints pending as on the last day of the month, if any.<br>
+        ^Average resolution time is the sum total of time taken to resolve each complaint in the current month divided by total number of complaints resolved in the current month.
+    </div>
+
+    <h3>Trend of annual disposal of complaints</h3>
+    <table class="table-striped">
+        <thead>
+            <tr>
+                <th width="5%">SN</th>
+                <th width="20%">Year</th>
+                <th width="20%">Carried forward from previous year</th>
+                <th width="15%">Received during the year</th>
+                <th width="20%">Resolved during the year</th>
+                <th width="20%">Pending at the end of the year</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2021-22</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2022-23</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>2023-24</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>2024-25</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="font-weight: bold; background-color: #f1f5f9;">
+                <td></td>
+                <td>Grand Total</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

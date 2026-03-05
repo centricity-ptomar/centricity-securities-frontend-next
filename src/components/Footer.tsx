@@ -49,7 +49,6 @@ const PRODUCTS_LINKS = [
 const QUICK_LINKS = [
     { label: 'Regulatory Disclosures', href: '/regulatory' },
     { label: 'Investor Charter and Grievance Reports', href: '/investor-resources' },
-    { label: 'Investor Complaints', href: '/investor-complaints' },
     { label: 'Privacy Policy', href: '/privacy-policy' },
     { label: 'Terms & Conditions', href: '/terms' },
     { label: 'Disclaimer', href: '/disclaimer' },
@@ -73,7 +72,6 @@ const IMPORTANT_LINKS = [
     { label: 'Investor Charter for Stock Brokers', href: '/investor-charter' },
     { label: 'Investor Charter for DP', href: '/investor-charter' },
     { label: 'Account Opening Procedure', href: '/regulatory' },
-    { label: 'Filing a complaint', href: '/investor-complaints' },
     { label: 'Sitemap', href: '/sitemap' },
 ]
 
@@ -91,7 +89,7 @@ export default function Footer() {
                         </div>
                         <div className="text-gray-400 space-y-2 leading-relaxed">
                             <p>
-                                Unit No 207 A & 207B, Tower-B,<br />
+                                207A, 207B, Tower-B,<br />
                                 Global Business Park, Gurugram,<br />
                                 Haryana-122002
                             </p>
@@ -204,13 +202,13 @@ export default function Footer() {
                     {/* Company Registration Details */}
                     <div className="border-t border-white/5 pt-6">
                         <p className="mb-2">
-                            <strong className="text-white">SEBI Stock Broker Registration No:</strong> INZ000323234 |
-                            <strong className="text-white"> AMFI Registration No:</strong> ARN – 189274 (Valid till 25/OCT/2027) |
+                            <strong className="text-white">SEBI Stock Broking Registration Number:</strong> INZ000323234 |
+                            <strong className="text-white"> SEBI NSDL Registration Number:</strong> IN-DP-831-2026 |
                             <strong className="text-white"> CIN:</strong> U67190HR2021PTC096860 |
-                            <strong className="text-white"> Exchange Membership No:</strong> NSE: 90293 | BSE: 6767
+                            <strong className="text-white"> NSE TM Code:</strong> 90456 | <strong className="text-white"> BSE TM Code:</strong> 6912
                         </p>
                         <p className="mb-2">
-                            <strong className="text-white">Registered Office:</strong> Unit No 207 A & 207B, Tower-B, Global Business Park, Gurugram, Haryana-122002.
+                            <strong className="text-white">Registered and Correspondence Address:</strong> 207A, 207B, Tower-B, Global Business Park, Gurugram, Haryana-122002.
                         </p>
                         <p>
                             In case of grievances for any of the services rendered by Centricity Securities Private Limited, please write to <a href="mailto:grievance@centricity.co.in" className="text-brand-primary hover:underline">grievance@centricity.co.in</a>. Please ensure that you carefully read the Risk Disclosure Document as prescribed by SEBI, our Terms of Use and Privacy Policy.

@@ -8,7 +8,7 @@ const CHARTERS = [
 ];
 
 const GRIEVANCE_REPORTS = [
-    { title: "Stock Broker", link: "#" },
+    { title: "Stock Broker", link: "/investor-complaints" },
     { title: "Depository Participant", link: "#" },
     { title: "Research Analyst", link: "#" },
 ];

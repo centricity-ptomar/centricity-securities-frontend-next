@@ -33,7 +33,7 @@ export default function CompanyInfo() {
                 </div>
 
                 {/* Key Details Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
                     <div className="p-6 rounded-xl bg-white/5 border border-white/10 hover:border-brand-primary/50 transition-colors">
                         <h3 className="text-sm uppercase tracking-wider text-brand-primary font-semibold mb-2">Registered Name</h3>
@@ -41,13 +41,18 @@ export default function CompanyInfo() {
                     </div>
 
                     <div className="p-6 rounded-xl bg-white/5 border border-white/10 hover:border-brand-primary/50 transition-colors">
-                        <h3 className="text-sm uppercase tracking-wider text-brand-primary font-semibold mb-2">SEBI Reg. No.</h3>
+                        <h3 className="text-sm uppercase tracking-wider text-brand-primary font-semibold mb-2">SEBI Stock Broking</h3>
                         <p className="font-medium text-white">INZ000323234</p>
                     </div>
 
                     <div className="p-6 rounded-xl bg-white/5 border border-white/10 hover:border-brand-primary/50 transition-colors">
-                        <h3 className="text-sm uppercase tracking-wider text-brand-primary font-semibold mb-2">AMFI Reg. No.</h3>
-                        <p className="font-medium text-white">ARN – 189274</p>
+                        <h3 className="text-sm uppercase tracking-wider text-brand-primary font-semibold mb-2">SEBI NSDL</h3>
+                        <p className="font-medium text-white">IN-DP-831-2026</p>
+                    </div>
+
+                    <div className="p-6 rounded-xl bg-white/5 border border-white/10 hover:border-brand-primary/50 transition-colors">
+                        <h3 className="text-sm uppercase tracking-wider text-brand-primary font-semibold mb-2">NSE / BSE TM Code</h3>
+                        <p className="font-medium text-white">90456 / 6912</p>
                     </div>
 
                     <div className="p-6 rounded-xl bg-white/5 border border-white/10 hover:border-brand-primary/50 transition-colors">
