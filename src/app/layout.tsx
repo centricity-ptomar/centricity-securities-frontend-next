@@ -7,6 +7,7 @@ import CookieBanner from "@/components/CookieBanner";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import BackToTop from "@/components/BackToTop";
 import RiskDisclosureModal from "@/components/RiskDisclosureModal";
+import AccessibilityWidget from "@/components/AccessibilityWidget";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -44,6 +45,7 @@ export default function RootLayout({
         <CookieBanner />
         <WhatsAppButton />
         <BackToTop />
+        <AccessibilityWidget />
       </body>
     </html>
   );

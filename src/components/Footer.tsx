@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const SOCIAL_LINKS = [
     {
@@ -48,6 +49,7 @@ const PRODUCTS_LINKS = [
 
 const QUICK_LINKS = [
     { label: 'Regulatory Disclosures', href: '/regulatory' },
+    { label: 'Pricing & Brokerage', href: '/pricing' },
     { label: 'Investor Charter and Grievance Reports', href: '/investor-resources' },
     { label: 'Privacy Policy', href: '/privacy-policy' },
     { label: 'Terms & Conditions', href: '/terms' },
@@ -85,7 +87,13 @@ export default function Footer() {
                     {/* Column 1: Contact & Socials */}
                     <div className="space-y-6">
                         <div className="flex items-center gap-2 mb-4">
-                            <span className="text-2xl font-bold font-heading text-white tracking-tight">OneInvest</span>
+                            <Image
+                                src="/one-invest-logo-modified.png"
+                                alt="OneInvest Logo"
+                                width={160}
+                                height={40}
+                                className="h-8 w-auto md:h-10 opacity-90 drop-shadow-md"
+                            />
                         </div>
                         <div className="text-gray-400 space-y-2 leading-relaxed">
                             <p>

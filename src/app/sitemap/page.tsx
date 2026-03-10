@@ -12,6 +12,7 @@ const sitemapLinks = [
         links: [
             { label: 'Home', href: '/' },
             { label: 'About Us', href: '/about' },
+            { label: 'Pricing & Brokerage', href: '/pricing' },
             { label: 'Careers', href: '/careers' },
             { label: 'Contact Us', href: '/contact' },
             { label: 'Press & Media', href: '/press' },

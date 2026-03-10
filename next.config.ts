@@ -8,6 +8,7 @@ const nextConfig: NextConfig = {
   // Only apply basePath in production (GitHub Pages)
   basePath: isProd ? `/${repoName}` : undefined,
   assetPrefix: isProd ? `/${repoName}/` : undefined,
+  trailingSlash: true,
   images: {
     unoptimized: true,
   },

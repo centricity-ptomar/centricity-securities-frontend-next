@@ -13,33 +13,28 @@ const FORMS = [
         link: "#"
     },
     {
-        title: "Common Modification Form",
-        description: "Request changes to your address, bank details, or other account information.",
+        title: "Change Bank Details Form",
+        description: "Request to update your registered bank account details.",
         link: "#"
     },
     {
-        title: "Delivery Instruction Slip (DIS)",
-        description: "Booklet request for transferring shares from your demat account.",
+        title: "KYC Update Form",
+        description: "Form for updating your KYC details (address, email, mobile).",
         link: "#"
     },
     {
-        title: "Demat Request Form",
-        description: "Convert your physical share certificates into electronic format.",
+        title: "Change DP Details Form",
+        description: "Request to modify your Depository Participant details.",
         link: "#"
     },
     {
-        title: "Remat Request Form",
-        description: "Convert your electronic shares back into physical certificates.",
+        title: "Change Nominee Form",
+        description: "Add, update, or remove nominees for your trading and demat account.",
         link: "#"
     },
     {
-        title: "Pledge Request Form",
-        description: "Pledge your securities for margin benefits.",
-        link: "#"
-    },
-    {
-        title: "Unpledge Request Form",
-        description: "Release your pledged securities.",
+        title: "Live Margin Files",
+        description: "Download the latest margin files for enabled segments.",
         link: "#"
     }
 ];

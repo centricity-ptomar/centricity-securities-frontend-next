@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useScrollPosition } from '../hooks/useScrollPosition';
 
 export default function Header() {
@@ -22,9 +23,14 @@ export default function Header() {
                     {/* Logo */}
                     <Link href="/" className="flex-shrink-0" aria-label="OneInvest Home">
                         <div className="flex items-center gap-2">
-                            <span className="text-3xl font-bold font-heading text-brand-primary tracking-tight">
-                                OneInvest
-                            </span>
+                            <Image
+                                src="/one-invest-logo-modified.png"
+                                alt="OneInvest Logo"
+                                width={160}
+                                height={40}
+                                className="h-8 w-auto md:h-10 drop-shadow-md"
+                                priority
+                            />
                         </div>
                     </Link>
 
