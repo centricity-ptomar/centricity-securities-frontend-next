@@ -2,6 +2,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import logoImg from '../../public/one-invest-logo-modified.png';
 
 const SOCIAL_LINKS = [
     {
@@ -88,7 +89,7 @@ export default function Footer() {
                     <div className="space-y-6">
                         <div className="flex items-center gap-2 mb-4">
                             <Image
-                                src="/one-invest-logo-modified.png"
+                                src={logoImg}
                                 alt="OneInvest Logo"
                                 width={160}
                                 height={40}
