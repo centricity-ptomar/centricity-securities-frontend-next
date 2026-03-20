@@ -1,13 +1,13 @@
 import type { NextConfig } from "next";
 
-const isProd = process.env.NODE_ENV === 'production';
+const isGithubActions = process.env.GITHUB_ACTIONS === 'true';
 const repoName = 'centricity-securities-frontend-next';
 
 const nextConfig: NextConfig = {
   output: 'export',
   // Only apply basePath in production (GitHub Pages)
-  basePath: isProd ? `/${repoName}` : undefined,
-  assetPrefix: isProd ? `/${repoName}/` : undefined,
+  basePath: isGithubActions ? `/${repoName}` : undefined,
+  assetPrefix: isGithubActions ? `/${repoName}/` : undefined,
   trailingSlash: true,
   images: {
     unoptimized: true,
